@@ -1,0 +1,68 @@
+=== START job_001 ===
+{"id": "job_001", "text": "\"As is a tale, so is life: not how long it is, but how good it is, is what matters.\"", "background": "/Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/input_videos/job_001_tiktok.mp4", "music": null, "template": "bold-stoic-v2", "length_min": 18, "length_max": 28, "lang": "EN"}
+
+$ ffmpeg -y -stream_loop -1 -i /Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/input_videos/job_001_tiktok.mp4 -t 23 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,drawtext=fontfile='/System/Library/Fonts/Supplemental/Arial.ttf':text='"As is a tale, so is life\: not how long it\nis, but how good it is, is what matters."':x=(w-text_w)/2:y=h-text_h-160:fontsize=47:fontcolor=white:borderw=2:bordercolor=black@0.7:box=1:boxcolor=black@0.85:boxborderw=20 -pix_fmt yuv420p -c:v libx264 /Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/job_001_tiktok.mp4
+ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/input_videos/job_001_tiktok.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:23.00, start: 0.000000, bitrate: 493 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920, 490 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x12ae060a0] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x12ae060a0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x12ae060a0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/job_001_tiktok.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   30 fps=0.0 q=29.0 size=     256KiB time=00:00:00.93 bitrate=2247.4kbits/s speed=1.84x    frame=   98 fps= 97 q=29.0 size=     256KiB time=00:00:03.20 bitrate= 655.5kbits/s speed=3.16x    frame=  174 fps=115 q=29.0 size=     256KiB time=00:00:05.73 bitrate= 365.8kbits/s speed=3.78x    frame=  245 fps=121 q=29.0 size=     256KiB time=00:00:08.10 bitrate= 259.0kbits/s speed=4.01x    frame=  304 fps=120 q=29.0 size=     768KiB time=00:00:10.06 bitrate= 625.0kbits/s speed=3.98x    frame=  376 fps=124 q=29.0 size=     768KiB time=00:00:12.46 bitrate= 504.7kbits/s speed=4.11x    frame=  456 fps=129 q=29.0 size=     768KiB time=00:00:15.13 bitrate= 415.8kbits/s speed=4.28x    frame=  505 fps=125 q=29.0 size=    1280KiB time=00:00:16.80 bitrate= 624.2kbits/s speed=4.15x    frame=  594 fps=131 q=29.0 size=    1280KiB time=00:00:19.73 bitrate= 531.4kbits/s speed=4.34x    [out#0/mp4 @ 0x600000a8c240] video:1359KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.657293%
+frame=  690 fps=138 q=-1.0 Lsize=    1368KiB time=00:00:22.93 bitrate= 488.7kbits/s speed= 4.6x    
+[libx264 @ 0x12ae060a0] frame I:3     Avg QP:13.61  size:433658
+[libx264 @ 0x12ae060a0] frame P:174   Avg QP:14.15  size:   314
+[libx264 @ 0x12ae060a0] frame B:513   Avg QP:21.97  size:    69
+[libx264 @ 0x12ae060a0] consecutive B-frames:  0.9%  0.0%  0.0% 99.1%
+[libx264 @ 0x12ae060a0] mb I  I16..4:  8.0% 66.1% 25.8%
+[libx264 @ 0x12ae060a0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  2.1%  0.0%  0.0%  0.0%  0.0%    skip:97.9%
+[libx264 @ 0x12ae060a0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%  L0:38.0% L1:62.0% BI: 0.0%
+[libx264 @ 0x12ae060a0] 8x8 transform intra:66.3% inter:94.5%
+[libx264 @ 0x12ae060a0] coded y,uvDC,uvAC intra: 97.7% 89.8% 80.3% inter: 0.0% 0.1% 0.0%
+[libx264 @ 0x12ae060a0] i16 v,h,dc,p: 11%  8% 62% 19%
+[libx264 @ 0x12ae060a0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 10% 35%  6%  8%  8%  5%  6%  8%
+[libx264 @ 0x12ae060a0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 13% 19%  8% 10%  9%  7%  7%  8%
+[libx264 @ 0x12ae060a0] i8c dc,h,v,p: 51% 15% 26%  8%
+[libx264 @ 0x12ae060a0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x12ae060a0] ref P L0: 21.0%  0.0% 29.3% 49.7%
+[libx264 @ 0x12ae060a0] ref B L0:  3.4% 96.3%  0.3%
+[libx264 @ 0x12ae060a0] ref B L1: 96.5%  3.5%
+[libx264 @ 0x12ae060a0] kb/s:483.85
+STATUS: ok
+=== END job_001 ===

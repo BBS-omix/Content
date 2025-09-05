@@ -1,0 +1,37 @@
+{
+  "id": "neon-pop",
+  "version": "1.0",
+  "colors": {
+    "primary": "#0A0A0A",
+    "accent": "#39FF14",
+    "captionBox": "#0A0A0A",
+    "captionOpacity": 0.85,
+    "stroke": "#000000",
+    "shadow": true
+  },
+  "typography": {
+    "titleFont": "Inter",
+    "captionFont": "Manrope",
+    "titleScale": 1.1,
+    "captionScale": 1.08,
+    "lineHeight": 1.08,
+    "weight": 800
+  },
+  "caption": {
+    "style": "bold_boxed",
+    "padding": 12,
+    "radius": 10,
+    "align": "center"
+  },
+  "watermark": {
+    "enabled": true,
+    "position": "bottom_left",
+    "opacity": 0.55
+  },
+  "safeOverlays": [
+    "tiktok",
+    "instagram",
+    "youtube"
+  ],
+  "approved": true
+}

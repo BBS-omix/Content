@@ -1,0 +1,16 @@
+{
+  "last_output_dir": "./output",
+  "last_logs_dir": "/Users/omixron/Desktop/ContentAutomation/QuickProduction/Stoicism/logs",
+  "fps": 30,
+  "segments_count": 6,
+  "segment_mode": "even",
+  "overlay_keep": "replace",
+  "dated_subfolder": true,
+  "quality": {
+    "contrast": 0.0,
+    "saturation": 1.0,
+    "sharpen": 0.0,
+    "vignette": 0.0,
+    "safe": true
+  }
+}

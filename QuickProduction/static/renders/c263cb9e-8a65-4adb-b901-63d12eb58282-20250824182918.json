@@ -1,0 +1,11 @@
+{
+  "id": "c263cb9e-8a65-4adb-b901-63d12eb58282",
+  "text": "\"As is a tale, so is life: not how long it is, but how good it is, is what matters.\"",
+  "background": "http://127.0.0.1:8000/static/backgrounds/1.png",
+  "template": "bold-stoic-v2",
+  "target": "18-28s",
+  "fontSize": 64,
+  "position": "bottom",
+  "lineGap": 8,
+  "margin": 96
+}

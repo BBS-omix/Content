@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+.btn { @apply rounded bg-zinc-800 hover:bg-zinc-700 px-3 py-1.5 text-sm border border-white/10; }
+.btn-primary { @apply rounded bg-violet-600 hover:bg-violet-500 px-3 py-1.5 text-sm text-white; }
+.input { @apply w-full rounded bg-zinc-900/60 border border-white/10 px-2 py-1.5 text-sm; }
+/* ===== Calm Dark Theme (scoped) ===== */
+.theme-calm {
+  --bg-page:        #0B0E11;  /* softer than pure black */
+  --bg-panel:       #0F1217;
+  --bg-panel-2:     #12161C;
+  --border-soft:    rgba(255,255,255,0.06);
+  --border-fainter: rgba(255,255,255,0.04);
+
+  --text-strong:    #E6EAF2;
+  --text-muted:     #A3ADB8;
+  --text-subtle:    #7A8594;
+
+  --accent:         #6366F1;  /* indigo-500 */
+  --accent-hover:   #5558E6;
+
+  --chip-ready-t:   #A7F3D0;
+  --chip-ready-b:   #34D399;
+  --chip-ready-bg:  rgba(16,185,129,.08);
+
+  --chip-warn-t:    #FCD34D;
+  --chip-warn-b:    #F59E0B;
+  --chip-warn-bg:   rgba(245,158,11,.08);
+
+  --row-hover:      rgba(255,255,255,.03);
+  --row-selected:   rgba(99,102,241,.07);
+  --focus-ring:     0 0 0 2px rgba(99,102,241,.25);
+}
+
+/* Page & panels */
+.theme-calm body,
+.theme-calm .app-root {
+  background: var(--bg-page);
+  color: var(--text-strong);
+}
+.theme-calm .panel,
+.theme-calm header.sticky {
+  background: color-mix(in oklab, var(--bg-panel) 92%, black 8%);
+  border-color: var(--border-soft);
+  box-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
+
+/* Inputs */
+.theme-calm .input,
+.theme-calm input[type="text"],
+.theme-calm input[type="search"] {
+  background: #0F1318;
+  border: 1px solid var(--border-soft);
+  color: var(--text-strong);
+}
+.theme-calm .input::placeholder { color: var(--text-subtle); }
+.theme-calm .input:focus { outline: none; box-shadow: var(--focus-ring); }
+
+/* Buttons */
+.theme-calm .btn {
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--border-soft);
+  color: var(--text-strong);
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+.theme-calm .btn:hover { background: rgba(255,255,255,.1); }
+.theme-calm .btn-primary {
+  background: var(--accent);
+  border: 1px solid transparent;
+  color: white;
+}
+.theme-calm .btn-primary:hover { background: var(--accent-hover); }
+
+/* Chips */
+.theme-calm .chip-ready {
+  color: var(--chip-ready-t);
+  border: 1px solid var(--chip-ready-b);
+  background: var(--chip-ready-bg);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+.theme-calm .chip-warn {
+  color: var(--chip-warn-t);
+  border: 1px solid var(--chip-warn-b);
+  background: var(--chip-warn-bg);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+/* Table rows */
+.theme-calm table tbody tr:hover { background: var(--row-hover); }
+.theme-calm table thead { background: var(--bg-panel-2); border-color: var(--border-soft); }
+.theme-calm .border-faint { border-color: var(--border-fainter); }

@@ -1,0 +1,11 @@
+{
+  "id": "41f8aefc-fe7a-4659-a6a3-2038f21b3272",
+  "text": "Tags: #time #wisdom #purpose",
+  "background": "http://127.0.0.1:8000/static/backgrounds/1.png",
+  "template": "bold-stoic-v2",
+  "target": "18-28s",
+  "fontSize": 64,
+  "position": "bottom",
+  "lineGap": 8,
+  "margin": 96
+}

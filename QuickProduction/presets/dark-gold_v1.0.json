@@ -1,0 +1,37 @@
+{
+  "id": "dark-gold",
+  "version": "1.0",
+  "colors": {
+    "primary": "#0F0F10",
+    "accent": "#D4AF37",
+    "captionBox": "#6b4343",
+    "captionOpacity": 0.8,
+    "stroke": "#000000",
+    "shadow": true
+  },
+  "typography": {
+    "titleFont": "Inter",
+    "captionFont": "Manrope",
+    "titleScale": 1,
+    "captionScale": 1,
+    "lineHeight": 1.1,
+    "weight": 700
+  },
+  "caption": {
+    "style": "bold_boxed",
+    "padding": 12,
+    "radius": 8,
+    "align": "center"
+  },
+  "watermark": {
+    "enabled": true,
+    "position": "top_right",
+    "opacity": 0.6
+  },
+  "safeOverlays": [
+    "tiktok",
+    "instagram",
+    "youtube"
+  ],
+  "approved": true
+}
